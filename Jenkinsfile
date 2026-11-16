@@ -19,14 +19,14 @@ pipeline {
 
         stage('Installation des dependances') {
             steps {
-                bat 'python --version'
-                bat 'python -m pip install -r requirements-dev.txt'
+                bat 'C:\Users\DELL\AppData\Local\Programs\Python\Python314\python.exe --version'
+                bat 'C:\Users\DELL\AppData\Local\Programs\Python\Python314\python.exe -m pip install -r requirements-dev.txt'
             }
         }
 
         stage('Execution des tests') {
             steps {
-                bat 'python -m pytest -v --cov=app --cov-report=term-missing'
+                bat 'C:\Users\DELL\AppData\Local\Programs\Python\Python314\python.exe -m pytest -v --cov=app --cov-report=term-missing'
             }
         }
     }
