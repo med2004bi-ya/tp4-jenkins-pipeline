@@ -20,7 +20,7 @@ pipeline {
         stage('Installation des dependances') {
             steps {
                 bat 'python --version'
-                bat 'python -m pip install -r requirements.txt'
+                bat 'python -m pip install -r requirements-dev.txt'
             }
         }
 
